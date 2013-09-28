@@ -68,7 +68,7 @@
         }
         
         ((SLComposeViewController*)twitterViewComposer).completionHandler = ^(SLComposeViewControllerResult result) {
-            [viewController dismissModalViewControllerAnimated:YES];
+            [viewController dismissViewControllerAnimated:YES completion:nil];
         };
     } else {
         // ios 5
